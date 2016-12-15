@@ -65,7 +65,8 @@ PackageDoc := rec(
 
 Dependencies := rec(
   GAP := ">= 4.8",
-  NeededOtherPackages := [ [ "GAPDoc", ">= 1.5" ] ],
+  NeededOtherPackages := [ [ "GAPDoc", ">= 1.5" ]
+                         , [ "json", ">= 1.0.1" ] ],
   SuggestedOtherPackages := [ ],
   ExternalConditions := [ ],
 ),
@@ -76,7 +77,7 @@ AvailabilityTest := function()
 
 TestFile := "tst/testall.g",
 
-#Keywords := [ "TODO" ],
+Keywords := [ "Graphics", "Interactive" ],
 
 ));
 
